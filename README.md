@@ -25,8 +25,6 @@ Si de modelul de detector:
 
 ## Project structure & Usage
 
-.
-
 ├── classe
 
 ---  ├── __init__.py
