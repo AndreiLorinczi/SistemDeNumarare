@@ -55,9 +55,9 @@ Si de modelul de detector:
 
 ├── output(optional)
 
-│   ├── output_01.avi
+--- ├── output_01.avi
 
-│   └── output_02.avi
+--- └── output_02.avi
 .
 .
 .
