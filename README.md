@@ -61,7 +61,8 @@ Si de modelul de detector:
 .
 .
 
-└── people_counter.py
+└── Sistem_de_numarare.py
+
 
 
 
@@ -118,22 +119,6 @@ Momentan proiectul este functional si stabil!
 - Move to RaspberryPi
 
 
-## Bibliografie
 
 
 
-- PyImageSearch 
-
-https://www.pyimagesearch.com/ - site/forum specializat in domeniul Computer Vision.
-
--Despre SSD: 
-
-https://www.pyimagesearch.com/2017/09/11/object-detection-with-deep-learning-and-opencv/ 
-
-https://arxiv.org/abs/1704.04861
-
-- Object tracking: 
-
-https://www.pyimagesearch.com/category/object-tracking/
-
-https://www.pyimagesearch.com/2018/07/23/simple-object-tracking-with-opencv/
