@@ -26,9 +26,6 @@ Si de modelul de detector:
 ## Project structure & Usage
 
 ├── classe
-
----  ├── __init__.py
-
 ---  ├── centroidtracker.py
 
 --- └── trackableobject.py
@@ -43,41 +40,15 @@ Si de modelul de detector:
 
 --- ├── example_01.mp4
 
---- ├──  example_02.mp4
-
---- ├──  example_03.mp4
-
---- ├──  example_06.mp4
-
---- ├──  example_07.mp4
+....
 
 ├── output(optional)
 
 --- ├── output_01.avi
 
---- └── output_02.avi
-.
-.
-.
-.
+....
 
 └── Sistem_de_numarare.py
-
-
-
-
-
-Clasa CentroidTracker preia bounding box-ul obiectelor detectate si apoi foloseste un algoritm care asuma faptul ca perechile de centroizi(baricentre) cu distanta Euclidiana minima intre ele sunt acelasi obiect. 
-
-Clasa TrackableObject e o simpla clasa de stocare care stocheaza diferite informatii despre obiectul curent.
-
-Pentru detectie folosim un model de la Google, un single shot detector MobileNetSSD.
-
-
-Faza 1 — Detectia: In cursul fazei de detectie mai costisitoare folosim un object tracker pentru a detecta daca obiecte noi au intrat in vedere si vedem daca putem gasi obiecte care sunt declarate disparute in timpul detectiei. Pentru fiecare obiect detectat folosim sau updatam object tracker cu coordonate noi. Deoarece acest process este destul de costisitor folosim acest proces odata la N frame-uri. 
-
-
-Faza 2 — Tracking: In momentul in care nu detectam intram in faza de tracking. Pentru fiecare obiect detectat, creeam un obiect tracker pentru a face tracking obiectului care se misca in frame. Object tracker-ul este rapid si eficient decat detectorul. Folosim acest object tracker pana cand ajungem la N frame si apoi reaplicam detectorul. Acest proces se repeta de mai multe ori.
 
 
 
@@ -105,7 +76,7 @@ Momentan proiectul este functional si stabil!
 ## Limitari&Bugs
 
 
-- In functie de argumentul de confidenta dat exista cateva probleme de recunoastere pe diferite exemple video(spre exemplu o persoana este recunoscuta prea tarziu si orientatia sus/jos poate fi eronata ).
+- In functie de argumentul de confidenta dat exista cateva probleme de recunoastere pe diferite exemple video(spre exemplu o persoana este recunoscuta prea tarziu si astfel sensul de deplasare poate fi eronat ).
 
 - De optimizat momentele de skipframes(momentele din stream peste care sar cand detectorul nu se afla in stare de detectie sau tracking)
 
