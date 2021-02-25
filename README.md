@@ -26,6 +26,7 @@ Si de modelul de detector:
 ## Project structure & Usage
 
 ├── classe
+
 ---  ├── centroidtracker.py
 
 --- └── trackableobject.py
