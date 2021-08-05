@@ -1,9 +1,6 @@
-# Sistem de numarare al persoanelor folosind computer vision
-Sistemul de numarare a persoanelor este o aplicatie care are ca scop recunoasterea si urmarirea sensului de deplasare a persoanelor, aceasta indicand atat numarul de persoane ce se afla intr-un stream video cat si sensul de deplasare al acestora.
+# People Counter
 
 # Requirements
-
-Pentru a utiliza aceasta aplicatie avem nevoie de urmatoarele librarii python:
 
 
 
@@ -14,8 +11,6 @@ Pentru a utiliza aceasta aplicatie avem nevoie de urmatoarele librarii python:
 -dlib : "http://dlib.net/" version  19.21.1
 
 -imutils : "https://github.com/jrosebr1/imutils" version 0.5.3
-
-Si de modelul de detector:
 
 -MobileNetSSD: "https://github.com/chuanqi305/MobileNet-SSD" 
 
@@ -72,14 +67,6 @@ Momentan proiectul este functional si stabil!
 - Implementat skip frames
 
 
-
-
-## Limitari&Bugs
-
-
-- In functie de argumentul de confidenta dat exista cateva probleme de recunoastere pe diferite exemple video(spre exemplu o persoana este recunoscuta prea tarziu si astfel sensul de deplasare poate fi eronat ).
-
-- De optimizat momentele de skipframes(momentele din stream peste care sar cand detectorul nu se afla in stare de detectie sau tracking)
 
 
 
